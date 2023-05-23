@@ -49,7 +49,6 @@
   animation-duration: 24s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-  
 }
 @keyframes plane_fly {
   0% {
@@ -59,5 +58,27 @@
   100% {
     transform: translate(100%, -250px);
     /* transform: translateY(-10%); */
+  }
+}
+.bird_img {
+  width: 100px;
+}
+.bird {
+  position: absolute;
+  top: 300px;
+  animation-name: bird_fly;
+  animation-delay: 5s;
+  animation-duration: 24s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes bird_fly {
+  0% {
+    transform: translate(0%, 0px) scale(1);
+
+  }
+  100% {
+    transform: translate(1250%, -150px) scale(.2);
+ 
   }
 }
