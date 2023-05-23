@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.boy {
+  top: 450px;
+  position: absolute;
+  animation-duration: 5s;
+  animation-name: boy-run;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+}
+.boy img {
+  height: 200px;
+}
+@keyframes boy-run {
+    from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(600%);
+      }
+}
