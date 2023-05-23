@@ -15,20 +15,29 @@
 .boy {
   top: 450px;
   position: absolute;
-  animation-duration: 5s;
-  animation-name: boy-run;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: normal;
+  
 }
 .boy img {
   height: 200px;
 }
-@keyframes boy-run {
-    from {
-        transform: translateX(-100%);
-      }
-      to {
-        transform: translateX(600%);
-      }
+.boy_dog{
+    animation-duration: 8s;
+    animation-name: boy_dog_run;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+}
+@keyframes boy_dog_run {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+.dog {
+  position: absolute;
+  left: -140px;
+  top: 540px;
+  
 }
