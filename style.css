@@ -15,17 +15,16 @@
 .boy {
   top: 450px;
   position: absolute;
-  
 }
 .boy img {
   height: 200px;
 }
-.boy_dog{
-    animation-duration: 8s;
-    animation-name: boy_dog_run;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
+.boy_dog {
+  animation-duration: 8s;
+  animation-name: boy_dog_run;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
 }
 @keyframes boy_dog_run {
   from {
@@ -39,5 +38,26 @@
   position: absolute;
   left: -140px;
   top: 540px;
+}
+.plane_img {
+  width: 150px;
+  position: absolute;
+  top: 250px;
+}
+.plane {
+  animation-name: plane_fly;
+  animation-duration: 24s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
   
+}
+@keyframes plane_fly {
+  0% {
+    transform: translate(-10%, 0px);
+    /* transform: translateY(0%); */
+  }
+  100% {
+    transform: translate(100%, -250px);
+    /* transform: translateY(-10%); */
+  }
 }
